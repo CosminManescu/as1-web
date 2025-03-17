@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <img src="Logo.png" class="logo">
+
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Skills</a></li>
+                <li><a href="#">My Work</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+
+            <ul>
+                <li class="hideOnMobile"><a href="#">About Me</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">My Skills</a></li>
+                <li class="hideOnMobile"><a href="#">My Work</a></li>
+                <li class="hideOnMobile"><a href="#">Contact Me</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>Hi, My Name Is <span>Cosmin M</span>.</h3>
+            <h1><span>M</span>ultimedia <span>D</span>esigner</h1>
+            <h3>I am a Multimedia Designer and Creative Specialist, passionate about bringing <br> ideas to life through innovative design. I specialize in creating impactful branding <br> for companies around the world, including logos, flyers, banners, and more. <br> Additionally, I design and develop modern, user-friendly websites that help <br> businesses establish a strong online presence.</h3>
+            <a href="#">Hire Me</a>
+
+        </div>
+
+        <div class="image">
+            <img src="Cosmin Picture.png" class="cosmin">
+        </div>
+
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+        </div>
+
+        <div class="main1">
+            <h1>Multimedia Creative Designer</h1>
+        </div>
+
+        <div class="footer">
+                <p>&copy; Cosmin M 2025</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'    
+        }
+    </script>
+    
+</body>
+</html>
