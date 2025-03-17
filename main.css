@@ -173,12 +173,20 @@ ul li a:hover{
 .main1 h1{
     margin-left: 7%;
     margin-top: 12%;
-    margin-bottom: 20%;
+    margin-bottom: 1%;
     text-align: center;
     font-size: 60px;
     color: darkgreen;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: black;
+}
+
+.main1 h4{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer p{
